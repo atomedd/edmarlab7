@@ -1,8 +1,3 @@
-<!--
-IST 107 - Introduction to Internet Programming and Web Applications
-CCTB College
-Instructor: Washington Valencia
--->
 <!DOCTYPE html>
 <html>
 
@@ -17,7 +12,7 @@ Instructor: Washington Valencia
     <!-- Link favicon-->
     <link rel="shortcut icon" type="image/x-icon"
         href="https://canvascctb.s3.ca-central-1.amazonaws.com/account_1/attachments/95/CCTB_favicon.ico" />
-
+    <!-- Link to JavaScript file -->
     <script src="js/script.js" defer></script>
 </head>
 
@@ -26,82 +21,53 @@ Instructor: Washington Valencia
 
         <!-- Header -->
         <header id="header" class="shadow-xs">
-
             <!-- Navbar -->
             <div class="container position-relative">
-
                 <nav class="navbar navbar-expand-lg navbar-light justify-content-lg-between justify-content-md-inherit">
-
                     <div class="align-items-start">
                         <ul class="navbar-nav" id="menuTab">
-
                             <li class="nav-item dropdown">
-                                <a href="#" id="mainNavBlog" class="nav-link" data-bs-toggle="dropdown"
-                                    aria-haspopup="true" aria-expanded="false">
-                                    <H3>Lab 7.1 Conditional execution & AWS & GIT</H3>
+                                <a href="#" id="mainNavBlog" class="nav-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <h3>Lab 7.1 Conditional execution & AWS & GIT</h3>
                                 </a>
                             </li>
-
                         </ul>
                 </nav>
             </div>
         </header>
 
-
         <div class="container py-5 mt-5">
             <h1 class="h2 mb-0 fw-bold">Contact Lists</h1>
-            <p class="lead text-gray-700">Easily manage and display a list of contacts. Use the options to show, modify,
-                or add new contacts. Extend the list dynamically with the provided tools to ensure efficient contact
-                management.</p>
+            <p class="lead text-gray-700">Easily manage and display a list of contacts. Use the options to show, modify, or add new contacts. Extend the list dynamically with the provided tools to ensure efficient contact management.</p>
 
             <!-- Add more contacts dynamically -->
-            <ul class="list-group">
-                <li class="list-group-item">
-                    Maxwell Wright / (0191) 719 6495 / agent1.@cctb.ca
-                </li>
-                <li class="list-group-item">
-                    Tom MacDonalds / (0191) 777 6495 / agent2.@cctb.ca
-                </li>
-                <li class="list-group-item">
-                    Helen Richards / (0191) 0800 1111 / agent3.@cctb.ca
-                </li>
+            <ul class="list-group" id="contactList">
+                <li class="list-group-item">Maxwell Wright / (0191) 719 6495 / agent1.@cctb.ca</li>
+                <li class="list-group-item">Tom MacDonalds / (0191) 777 6495 / agent2.@cctb.ca</li>
+                <li class="list-group-item">Helen Richards / (0191) 0800 1111 / agent3.@cctb.ca</li>
             </ul>
-
         </div>
-
 
         <!-- ADD MORE -->
         <div class="section py-5 border-bottom bg-warning">
             <div class="container">
                 <div class="row text-center-xs">
-
                     <div class="col-12 col-md-8">
-                        <h3 class="m-0"> To add a new contact, click on the "Add Contact" button and fill in the
-                            required details.</h3>
-
+                        <h3 class="m-0">To add a new contact, click on the "Add Contact" button and fill in the required details.</h3>
                     </div>
-
                     <div class="col-12 mt-4 d-block d-md-none"><!-- mobile spacer --></div>
-
                     <div class="col-12 col-md-4 text-align-end">
-                        <a href="#" onclick="addContact();"
-                            class="btn btn-primary rounded-pill d-inline-flex align-items-end px-4" id="add-contact">
+                        <a href="#" id="add-contact" class="btn btn-primary rounded-pill d-inline-flex align-items-end px-4">
                             <span class="me-2">Add Contact</span>
-                            <svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-                                class="bi bi-arrow-right-short" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z">
-                                </path>
+                            <svg width="18px" height="18px" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"></path>
                             </svg>
                         </a>
                     </div>
-
                 </div>
             </div>
         </div>
         <!-- /ADD MORE -->
     </div>
-
 </body>
-
 </html>
